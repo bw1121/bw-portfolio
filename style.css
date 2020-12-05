@@ -12,3 +12,58 @@ Text Domain: design-portfolio
 This theme, like WordPress, is licensed under GPL.
 Use it to make something cool, have fun, and share what you've learned.
 */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #5F6D6C;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+*:focus {
+    outline-color: #E5EFED;
+}
+
+/* ********** HEADER ********** */
+header {
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.15);
+    background-color: #ffffff;
+}
+
+.navbar-brand h1 a {
+    color: #5F6D6C;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #5F6D6C !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.menu-items {
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .menu-items {
+        width: fit-content;
+    }
+
+    .nav-link {
+        padding-right: 0rem !important;
+        padding-left: 3.5rem !important;
+    }
+}
