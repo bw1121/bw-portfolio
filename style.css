@@ -41,6 +41,11 @@ h2 {
     flex: 1 0 auto;
 }
 
+a:hover {
+    color: #5F6D6C;
+    text-decoration: underline;
+}
+
 /* ********** BUTTONS ********** */
 .btn {
     border-radius: 100px;
@@ -117,6 +122,60 @@ header {
 .hero-copy {
     padding-bottom: 1rem;
     padding-top: 1rem;
+}
+
+.portfolio-items {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.post-thumbnail {
+    border-radius: 5px;
+    border: 3px solid #E5EFED;
+    overflow: hidden;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.individual-article {
+    padding-bottom: 1rem;
+}
+
+.individual-article p {
+    color: #5F6D6C;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.portfolio-link {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+/*********** BLOG PAGE (index) ********** */
+.filter {
+    padding: 2rem 0 0 0;
+    margin: 0;
+}
+
+.filter li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.filter li a {
+    border: 3px solid #5F6D6C;
+    padding: 0.5rem 1.5rem;
+    border-radius: 100px;
+    color: #5F6D6C;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 
 /*********** INDIVIDUAL PAGE TEMPLATE ********** */
@@ -225,5 +284,9 @@ footer {
     .error-404-copy {
         padding-top: 0;
         padding-left: 3.5rem;
+    }
+
+    .individual-article {
+        padding-bottom: 2rem;
     }
 }

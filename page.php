@@ -13,9 +13,9 @@
                 }
             ?>
         </main>
-        <section class="col-lg-4">
+        <aside class="col-lg-4">
             <?php dynamic_sidebar( 'page-sidebar' ); ?>
-        </section>
+        </aside>
     </div>
 </div>
 
