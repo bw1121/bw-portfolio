@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
 
+        <script src="https://kit.fontawesome.com/d3219f82e9.js" crossorigin="anonymous"></script>
+
         <title><?php bloginfo('name'); ?></title>
 
         <?php wp_head(); ?>

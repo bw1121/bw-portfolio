@@ -82,4 +82,43 @@ function prefix_modify_nav_menu_args( $args ) {
 }
 add_filter( 'wp_nav_menu_args', 'prefix_modify_nav_menu_args' );
 
+
+
+/*========================================================
+
+Create Widget Areas
+
+==========================================================*/
+function blank_widgets_init() {
+    register_sidebar (array(
+        'name'          => ('Page Sidebar'),
+        'id'            => 'page-sidebar',
+        'description'   => 'Widget area in page sidebar',
+        'before_widget' => '<div class="page-sidebar">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ));
+    register_sidebar (array(
+        'name'          => ('Left Footer'),
+        'id'            => 'left-footer',
+        'description'   => 'Widget area in page sidebar',
+        'before_widget' => '<div class="left-footer">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ));
+    register_sidebar (array(
+        'name'          => ('Right Footer'),
+        'id'            => 'right-footer',
+        'description'   => 'Widget area in page sidebar',
+        'before_widget' => '<div class="right-footer">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ));
+}
+
+add_action('widgets_init', 'blank_widgets_init');
+
 ?>
